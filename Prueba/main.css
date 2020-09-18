@@ -1,0 +1,240 @@
+/********************************ALL***********************************************************************/
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#logo{
+  text-align: center;
+}
+
+#maintitulo{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 6.6px;
+}
+
+#slogan{
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 16px;
+    margin-top: 10px;
+  }
+  
+nav ul li a {
+    color: #2f2e2e;
+    border-top-style: solid;
+    border-width: 1px;
+    padding-top: 15px;
+    margin: 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+nav ul li a:hover {
+    text-decoration: none;
+    color:#2f2e2e; 
+    border-width: 3px;
+    font-weight: bold;
+  }
+
+#mobileNavBar{
+  display: none;
+}
+
+  
+footer div{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+  
+footer{
+    padding-top: 30px;
+  }
+  
+footer div{
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+  
+footer div img{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+  }
+  
+a[href^="mailto:"]{
+    text-decoration: none;
+    color:#2f2e2e;
+    font-size: 13px;
+  }
+  
+#linkedin{
+     height: 27px;
+     width: 27px;
+  }
+  
+#facebook{
+    height: 27px;
+    width: 27px;
+    margin-left: 7px;
+  }
+  
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+.fa-whatsapp {
+    margin-top:15px;
+    color:#FFF;
+  }
+
+.resaltado{
+    border-width: 3px;
+    font-weight: bold;
+  }
+
+@media only screen and (max-width: 767.9px){
+  #webNavBar{
+    display: none;
+  }
+  
+  #mobileNavBar{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #mobileNavBar h1:nth-child(1){
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 6.6px;
+  }
+  
+  #mobileNavBar h1:nth-child(2){
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .whatsapp {
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:20px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+.fa-whatsapp {
+    margin-top:10px;
+    color:#FFF;
+  }
+} 
+
+/********************************index.html***********************************************************************/
+
+.carousel{
+    position: relative;
+  }
+
+.btn-customized{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn-customized:hover{
+    color: #bbb
+  }
+
+
+  /********************************about us.html***********************************************************************/
+
+#principal{
+  margin-top: 50px;
+  text-align: justify;
+}
+
+#principal h2{
+  color:#2f2e2e;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+#principal p:nth-child(2){
+  margin-top: 30px;
+}
+
+#principal p{
+  font-size: 13px;
+}
+
+#principal a{
+  color:#2f2e2e;
+  text-decoration: none;
+  font-size: 11px;
+  display: block;
+}
+
+#secundario{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#secundario span:nth-child(1){
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#secundario span:nth-child(2){
+  font-size: 20px;
+  margin-left:50px;
+}
+
+#secundario span:nth-child(3){
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#secundario span:nth-child(4){
+  font-size: 20px;
+  margin-left:75px;
+}
+
+
+  
