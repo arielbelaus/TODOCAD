@@ -44,7 +44,6 @@ nav ul li a:hover {
     text-decoration: none;
     color:#2f2e2e; 
     border-width: 3px;
-    font-weight: bold;
   }
 
 #mobileNavBar{
@@ -123,6 +122,11 @@ a[href^="mailto:"]{
   #mobileNavBar{
     display: flex;
     flex-direction: row;
+  }
+
+  #mobileNavBar a{
+    text-decoration: none;
+    color:#2f2e2e;
   }
   
   #mobileNavBar h1:nth-child(1){
@@ -205,10 +209,6 @@ a[href^="mailto:"]{
   font-size: 13px;
 }
 
-#owners{
-  margin-left: 13px;
-}
-
 #owners a{
   margin-bottom: 5px;
   color:#2f2e2e;
@@ -229,6 +229,7 @@ a[href^="mailto:"]{
 #secundario span:nth-child(1){
   font-size: 30px;
   font-weight: 700;
+  margin-left: 20px;
 }
 
 #secundario span:nth-child(2){
@@ -281,12 +282,17 @@ a[href^="mailto:"]{
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
   bottom: 10%;
 }
+
+#myModal .container{
+  height: 100%;
+}
+
+
 
 /* Add Animation - Zoom in the Modal */
 .modal-content{
@@ -299,9 +305,6 @@ a[href^="mailto:"]{
   to {transform:scale(1)}
 }
 
-#myModal .container{
-  display: relative;
-}
 
 /* The Close Button */
 .close {
@@ -327,16 +330,22 @@ a[href^="mailto:"]{
   }
 }
 
+@media only screen and (min-width: 1400px){
+  .modal-content {
+    max-width: 100%;
+  }
+}
+
 #anterior{
   position: absolute;
   left: 10%;
-  top: 30%;
+  top: 45%;
 }
 
 #siguiente{
   position: absolute;
   right: 10%;
-  top: 30%;
+  top: 45%;
 }
 
 .arrows {
@@ -351,6 +360,10 @@ a[href^="mailto:"]{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+#contenedor-icon{
+  display: none;
 }
 
 /********************************Animations.html***********************************************************************/
