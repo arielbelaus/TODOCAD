@@ -164,6 +164,10 @@ a[href^="mailto:"]{
     margin-left:75px;
     margin-bottom: 20px;
   }
+
+#contenedor-icon{
+    display: none;
+  }
 }
 
 /********************************index.html***********************************************************************/
@@ -362,16 +366,52 @@ a[href^="mailto:"]{
   cursor: pointer;
 }
 
-#contenedor-icon{
-  display: none;
-}
-
 /********************************Animations.html***********************************************************************/
 
 #animations .row div{
   height: 360px;
 }
 
+/********************************Social Network.html***********************************************************************/
+
+#instagramFeed{
+  position: relative;
+  z-index: 0;
+}
+
+#instagramFeed .container{
+  position: absolute;
+  background-color:white;
+  bottom: 5px;
+  padding: 22px;
+  z-index: 99999;
+}
+
+/********************************Contact.html***********************************************************************/
+#contact{
+  margin-top: 50px;
+}
+
+#contact h3{
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#contact p{
+  font-size: 13px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+#contact h4{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#contact .row{
+  margin-bottom: 50px;
+}
 
 
 
