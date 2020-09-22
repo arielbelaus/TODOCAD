@@ -1,5 +1,5 @@
-> Una trancicion para cuando aparezcan los botones de el carousel principal
-> Opacidad en el boton play stop
-> anda el stop play en compu?
+> unidad de medida en rem
+> configurar whatsapp
+
 
 
