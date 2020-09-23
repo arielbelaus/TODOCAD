@@ -23,7 +23,7 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-//Ir a la foto anterior
+//Ir a la foto anterior con click
 document.querySelector('#anterior').addEventListener('click', (e) =>{
     const modalImg = document.querySelector('#img01')
     const imagenes = document.querySelector('#picturesPortfolio').querySelectorAll('img')
@@ -42,7 +42,7 @@ document.querySelector('#anterior').addEventListener('click', (e) =>{
     }
 })
 
-//Ir a la foto siguiente
+//Ir a la foto siguiente con click
 document.querySelector('#siguiente').addEventListener('click', (e) =>{
   const modalImg = document.querySelector('#img01')
   const imagenes = document.querySelector('#picturesPortfolio').querySelectorAll('img')
@@ -60,3 +60,49 @@ document.querySelector('#siguiente').addEventListener('click', (e) =>{
     }
   }
 })
+
+//Ir a la foto anterior con flecha
+document.addEventListener('keydown', (e) =>{
+  const key = e.key
+  const modalImg = document.querySelector('#img01')
+  const imagenes = document.querySelector('#picturesPortfolio').querySelectorAll('img')
+  Array.from(imagenes)
+  if(key === 'ArrowLeft'){
+    for(i = 0; i<imagenes.length; i++){
+      if(imagenes[i].src === modalImg.src){
+        if(i === 0){
+          const srcImgUltima = imagenes[imagenes.length-1].src
+          modalImg.src = srcImgUltima
+          break
+        }
+        const srcImgAnterior = imagenes[i-1].src
+        modalImg.src = srcImgAnterior;
+        break
+      }
+    }
+  }
+})
+
+//Ir a la foto siguiente con flecha
+document.addEventListener('keydown', (e) =>{
+  const key = e.key
+  const modalImg = document.querySelector('#img01')
+  const imagenes = document.querySelector('#picturesPortfolio').querySelectorAll('img')
+  Array.from(imagenes)
+  if(key === 'ArrowRight'){
+    for(i=0 ; i<imagenes.length; i++){
+      if(imagenes[i].src === modalImg.src){
+        if(i === imagenes.length-1){
+          const srcImgPrimera = imagenes[0].src
+          modalImg.src = srcImgPrimera
+          break
+        }
+        const srcImgSiguiente = imagenes[i+1].src
+        modalImg.src = srcImgSiguiente
+        break
+      }
+    }
+  }
+})
+
+
