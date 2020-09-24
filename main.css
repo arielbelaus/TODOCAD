@@ -1,4 +1,7 @@
 /********************************ALL***********************************************************************/
+html{
+  font-size: 62.5%;
+}
 *{
   font-family: 'Montserrat', sans-serif;
 }
@@ -8,13 +11,13 @@
 }
 
 #maintitulo{
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 5.3px;
 }
 
 #slogan{
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -36,13 +39,11 @@ nav ul li a {
     border-width: 1px;
     padding-top: 15px;
     margin: 5px;
-    font-size: 12px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 
 nav ul li a:hover {
-    text-decoration: none;
-    color:#2f2e2e; 
     border-width: 3px;
   }
 
@@ -57,8 +58,6 @@ footer{
 }
   
 #footerLogo{
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
@@ -75,7 +74,7 @@ footer{
 a[href^="mailto:"]{
     text-decoration: none;
     color:#2f2e2e;
-    font-size: 15px;
+    font-size: 1.5rem;
     padding: 5px;
   }
   
@@ -100,7 +99,7 @@ a[href^="mailto:"]{
     color:#FFF;
     border-radius:50px;
     text-align:center;
-    font-size:30px;
+    font-size:3rem;
     z-index:100;
     box-shadow: 2px 2px 3px #999;
   }
@@ -128,13 +127,15 @@ a[href^="mailto:"]{
     z-index: 1;
     margin-right: 20px;
     margin-bottom: 10px;
-    color: white;
+    color: #bbb;
     cursor: pointer;
+    transition: color 0.5s;
   }
 
 .btn-customized:hover{
-    color: #bbb
+    color: white
   }
+
 
   /********************************about us.html***********************************************************************/
 
@@ -146,7 +147,7 @@ a[href^="mailto:"]{
 #principal h2{
   color:#2f2e2e;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -155,20 +156,18 @@ a[href^="mailto:"]{
 }
 
 #principal p{
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 #owners a{
   margin-bottom: 5px;
   color:#2f2e2e;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 1.1rem;
   display: block;
 }
 
 #secundario{
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,25 +175,25 @@ a[href^="mailto:"]{
 
 
 #secundario span:nth-child(1){
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   margin-left: 20px;
 }
 
 #secundario span:nth-child(2){
-  font-size: 20px;
+  font-size: 2rem;
   margin-left:50px;
 }
 
 #secundario span:nth-child(3){
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   margin-left: 50px;
   margin-top: 50px;
 }
 
 #secundario span:nth-child(4){
-  font-size: 20px;
+  font-size: 2rem;
   margin-left:75px;
 }
 
@@ -261,7 +260,7 @@ a[href^="mailto:"]{
   top: 15px;
   right: 35px;
   color: #f1f1f1;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -288,15 +287,12 @@ a[href^="mailto:"]{
 
 .arrows {
   color: #f1f1f1;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 .arrows:hover,
 .arrows:focus {
-  color: #bbb;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -327,19 +323,19 @@ a[href^="mailto:"]{
 }
 
 #contact h3{
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 #contact p{
-  font-size: 13px;
+  font-size: 1.3rem;
   text-align: justify;
   margin-bottom: 30px;
 }
 
 #contact h4{
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -365,13 +361,13 @@ a[href^="mailto:"]{
   }
   
   #mobileNavBar h1:nth-child(1){
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 6.6px;
   }
   
   #mobileNavBar h1:nth-child(2){
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 400;
   }
 
@@ -385,7 +381,7 @@ a[href^="mailto:"]{
     color:#FFF;
     border-radius:50px;
     text-align:center;
-    font-size:30px;
+    font-size:3rem;
     z-index:100;
   }
   
@@ -395,7 +391,7 @@ a[href^="mailto:"]{
   }
 
 #secundario span:nth-child(4){
-    font-size: 20px;
+    font-size: 2rem;
     margin-left:75px;
     margin-bottom: 20px;
   }
@@ -415,5 +411,48 @@ a[href^="mailto:"]{
 @media only screen and (min-width: 1400px){
   .modal-content {
     max-width: 100%;
+  }
+}
+
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #bbb;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
   }
 }
