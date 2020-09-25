@@ -1,5 +1,7 @@
 /********************************portfolio.html***********************************************************************/
 
+// Seleccionar la flecha para volver arriba
+const scrollDown = document.querySelector('#scrollDown')
 // Get the modal
 const modal = document.getElementById('myModal');
 
@@ -11,6 +13,7 @@ document.querySelector('#picturesPortfolio').addEventListener("click", (e) => {
       const src = e.target.src
       modal.style.display = "block";
       modalImg.src = src; //toma el src de img y lo pone en modalImg
+      scrollDown.style.visibility= 'hidden'
     }
 
 })
@@ -21,7 +24,15 @@ const span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  scrollDown.style.visibility= 'visible'
 }
+
+//Al apretar en el controno de la imagen se cierra el modal
+modal.onclick = function() {
+  modal.style.display = "none";
+  scrollDown.style.visibility= 'visible'
+}
+
 
 //Ir a la foto anterior con click
 document.querySelector('#anterior').addEventListener('click', (e) =>{
@@ -121,10 +132,11 @@ document.onreadystatechange = function () {
 
 //ancla
 window.addEventListener('scroll', () =>{
-  const scrollDown = document.querySelector('#scrollDown')
   if(window.pageYOffset >= 200){
       scrollDown.style.opacity=0.9
   } else{
     scrollDown.style.opacity=0
   }
 })
+
+
