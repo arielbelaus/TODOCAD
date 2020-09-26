@@ -15,7 +15,6 @@ document.querySelector('#picturesPortfolio').addEventListener("click", (e) => {
       modalImg.src = src; //toma el src de img y lo pone en modalImg
       scrollDown.style.visibility= 'hidden'
     }
-
 })
 
 // Get the <span> element that closes the modal
@@ -28,10 +27,12 @@ span.onclick = function() {
 }
 
 //Al apretar en el controno de la imagen se cierra el modal
-modal.onclick = function() {
-  modal.style.display = "none";
-  scrollDown.style.visibility= 'visible'
-}
+modal.addEventListener('click', (e) => {
+  if(e.target.tagName === 'DIV'){
+    modal.style.display = "none";
+    scrollDown.style.visibility= 'visible'
+  }
+})
 
 
 //Ir a la foto anterior con click
